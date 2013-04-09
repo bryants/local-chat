@@ -1,0 +1,20 @@
+%header
+  .wrap 
+    %h1 LocalChat
+.wrap
+  .chats
+    #map
+      %h2 Chats in your area
+    #list
+      %form.search
+        %input.start{:type => 'text', :name => 'search', :value => 'Search', :autocomplete => 'off'}
+      %div.mousescroll#chatrooms
+        %ul
+          %li.new{:style => 'text-align: center;'}
+            %strong= link_to "New Chatroom", new_chatroom_path, :class => "button"
+          - @chatrooms.each do |chatroom|
+            %li
+              %h3= chatroom.name
+              %p 
+                = chatroom.users.count
+                users

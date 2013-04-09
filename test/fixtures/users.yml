@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  lat: 1.5
+  long: 1.5
+  chatroom_id: 1
+  radius: 1
+
+two:
+  name: MyString
+  lat: 1.5
+  long: 1.5
+  chatroom_id: 1
+  radius: 1
